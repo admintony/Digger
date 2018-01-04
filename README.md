@@ -1,13 +1,35 @@
-# Digger-v1.0
+# Digger 
 从百度爬取子域名
 
+## 0.更新说明
+
+在这段时间的使用过程中，发现了V1.0版本一些设计不够友好，还需要一些人力来辅助，所以进行了算法优化更新，这次都更新了什么：
+
+* 1.优化算法，不再需要用户输入page_num，而是对页面中“下一页”识别判断是否为最后一页。
+
+* 2.支持存活检测，--status 选项，支持用户自定义存活状态码，默认为all即不进行存活检测
+
+
+新版本的用法也有些不同了，下面是新版本的用法介绍：
+
+python diiger2.0.py --domain=swust.edu.cn [--status=200,404,403,401] [--thread=10]
+
+```python
+Options:
+  -h, --help           show this help message and exit
+  --domain=DOMAIN      父域名！[必须参数]
+  --thread=THREAD_NUM  线程数！[可选，默认为5]
+  --status=STATUS      存活检测状态码，默认不进行存活检测！输入状态码以","隔开[可选，默认不进行存活检测]
+```
 ## 1.目录
 
 ```bash
 ###########
 ├── Readme.md               // 帮助文档 
+├── Digger V2.0             // Digger v2.0版本
+│   ├── Digger v2.0.py      // Digger v2.0版本主程序
 ├── core                    // 核心代码存放目录
-│   ├── Digger_v1.0.py        // 主程序
+│   ├── Digger_v1.0.py      // Digger v1.0版本主程序
 ```
 
 ## 2.设计目的：
