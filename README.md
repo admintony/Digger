@@ -7,14 +7,14 @@
 
 * 1.优化算法，不再需要用户输入page_num，而是对页面中“下一页”识别判断是否为最后一页。
 
-* 2.支持存活检测，--status 选项，支持用户自定义存活状态码，默认为all即不进行存活检测
+* 2.支持存活检测，--status 选项，支持用户自定义存活状态码，默认为all即不进行存活检测
 
 
 新版本的用法也有些不同了，下面是新版本的用法介绍：
 
 python diiger2.0.py --domain=swust.edu.cn [--status=200,404,403,401] [--thread=10]
 
-```python
+```options
 Options:
   -h, --help           show this help message and exit
   --domain=DOMAIN      父域名！[必须参数]
