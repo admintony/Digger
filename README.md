@@ -38,7 +38,7 @@ Options:
 
 ## 3.用法
 
-Blog：http://47.95.206.199/?p=408
+Blog：http://admintony.com/子域名发现工具.html
 
 ```html
 usage:
